@@ -29,7 +29,7 @@ function discountPrices(prices, discount) {
     const length = prices.length;
     let discountedPrice = 0
 
-    if (length === 0 || Array.isArray(prices)) {
+    if (length === 0 || !Array.isArray(prices)) {
         return false;
     }
         
